@@ -1,0 +1,21 @@
+Andrew Bub and Harry Gebremedhin 
+
+Our final project is a field goal kicking game. 
+From a user's perspective, the user would run a make file.
+And the program compiles and the game starts. 
+The user presses the spacebar to launch the ball in the direction of the arrow which will be rotating back and forth.
+The user is given 3 lives to begin with and gets a bonus life for every 100 points the user scores.
+After scoring or missing the position of the arrow and the ball would be shifted to the left and to the right of the initial central position.
+After the 3 parts if the user still has a life the user would advance to the next level. 
+After reaching level 3 , if the user still has a life and completes all three parts the program reverts back to level 1.
+If the user has 0 lives left a game over text with the options of pressing q or r it appears. 
+From the programmers perspective, we used the libraries unistd.h, math.h, gfxnew.h, cstring, string and our own class called background to create the game.
+Our background class has a method to set the background based on the level. It uses the gfxnew.h library to draw the background for the game. 
+In our main driver we animate a ball and  an arrow pointing in the direction of where the ball would move.
+We called our background in the while loop and is initially set to level 1 and ball and arrow will be in the center which is part 1. 
+We used a bunch of if statements with in a while loop in order to set conditions for scoring,losing and also updating score, life, level and part.
+We ran the game and tested our conditions using different positions of the ball and saw that it responds accordingly. 
+ 
+
+   
+ 
