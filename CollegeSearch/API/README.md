@@ -1,5 +1,7 @@
 OO API README
 
+Link to data.csv, since file was too large for repository: https://ed-public-download.app.cloud.gov/downloads/Most-Recent-Cohorts-All-Data-Elements.csv
+
 For our OO API, we parse through our CSV datafile using the csv library to extract every college's name, city, state, 
 average ACT score, average SAT score, cost, undergraduate population, admission rate, region, website, and financial aid website.
 This information is all loaded in the load_all method
