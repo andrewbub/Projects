@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- written by: Andrew Bub, Harry Gebremedhin, Molly Pierce -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>College Search</title>
+    <link rel="stylesheet" text="text/css" href="Style/main.css">
+</head>
+
+<body>
+        <script type="text/javascript" src="Scripts/json2.js"></script>
+        <script type="text/javascript" src="Scripts/milestone.js"></script>
+        <script type="text/javascript" src="Scripts/execute.js"></script>
+        <div id="topFDiv">
+            <p id="Find">Find Schools</p>
+        </div>
+        <div id="leftFDiv">
+            <p id="Region">Region:</p>
+            <select id="option1" >
+                <label name="Region: ">Region: </label>
+                <option value="null">Select Region<br></option>
+                <option value="1">New England<br></option>
+                <option value="2">Mid-Atlantic<br></option>
+                <option value="3">Great Lakes<br></option>
+                <option value="4">Plains<br></option>
+                <option value="5">Southeast<br></option>
+                <option value="6">Southwest<br></option>
+                <option value="7">Rocky Mountains<br></option>
+                <option value="8">Far West<br></option>
+                <option value="9">Outlying Areas<br></option>
+            </select>
+                <p id="blank"> </p>
+                <form>
+                    <label id="ACT_label_0">Enter ACT: </label>
+                    <input type="text" name="ACT" value= null id="option3">
+                </form>
+                    <p id="blank"> </p>
+                    <form id="option7" name="radio1">
+                        <label name="Affordable Tuition:">Affordable Tuition:<br></label>
+                        <input type="radio" name="radio1" value="25000">
+                        <label id="undefined_label_0">Less than $25,000<br></label>
+                        <input type="radio" name="radio1" value="50000">
+                        <label id="undefined_label_1">$25,000 - $50,000<br></label>
+                        <input type="radio" name="radio1" value="80000">
+                        <label id="undefined_label_2">More than $50,000<br></label>
+                    </form>
+                </div>
+        <div id="midFDiv">
+            <p id="City">City:</p>
+            <form><label id="city_label_0"></label>
+                <input type="text" name="city" value= null id="option4">
+            </form>
+        </div>
+        <div id="rightFDiv">
+            <p id="State">State:</p>
+            <select id="option5">
+                <label name="State: ">State: </label>
+                <option value="null">Select State<br></option>
+                <option value="AK">AK<br></option>
+                <option value="AL">AL<br></option>
+                <option value="AR">AR<br></option>
+                <option value="AZ">AZ<br></option>
+                <option value="CA">CA<br></option>
+                <option value="CO">CO<br></option>
+                <option value="CT">CT<br></option>
+                <option value="DE">DE<br></option>
+                <option value="FL">FL<br></option>
+                <option value="GA">GA<br></option>
+                <option value="HI">HI<br></option>
+                <option value="IA">IA<br></option>
+                <option value="ID">ID<br></option>
+                <option value="IL">IL<br></option>
+                <option value="IN">IN<br></option>
+                <option value="KS">KS<br></option>
+                <option value="KY">KY<br></option>
+                <option value="LA">LA<br></option>
+                <option value="MA">MA<br></option>
+                <option value="MD">MD<br></option>
+                <option value="ME">ME<br></option>
+                <option value="MI">MI<br></option>
+                <option value="MN">MN<br></option>
+                <option value="MO">MO<br></option>
+                <option value="MS">MS<br></option>
+                <option value="MT">MT<br></option>
+                <option value="NC">NC<br></option>
+                <option value="ND">ND<br></option>
+                <option value="NE">NE<br></option>
+                <option value="NH">NH<br></option>
+                <option value="NJ">NJ<br></option>
+                <option value="NM">NM<br></option>
+                <option value="NV">NV<br></option>
+                <option value="NY">NY<br></option>
+                <option value="OH">OH<br></option>
+                <option value="OK">OK<br></option>
+                <option value="OR">OR<br></option>
+                <option value="PA">PA<br></option>
+                <option value="RI">RI<br></option>
+                <option value="SC">SC<br></option>
+                <option value="SD">SD<br></option>
+                <option value="TN">TN<br></option>
+                <option value="TX">TX<br></option>
+                <option value="UT">UT<br></option>
+                <option value="VA">VA<br></option>
+                <option value="VT">VT<br></option>
+                <option value="WA">WA<br></option>
+                <option value="WI">WI<br></option>
+                <option value="WV">WV<br></option>
+                <option value="WY">WY<br></option>
+            </select>
+            <p id="blank"> </p>
+            <form>
+                <label id="SAT_label_0">Enter SAT: </label>
+                <input type="text" name="SAT" value= null id="option2">
+            </form>
+                <p id="blank"> </p>
+            <form id="option6" name="radio2">
+                <label name="Size of School: ">Size of School: <br></label>
+                <input type="radio" name="radio2 " value="2000">
+                <label id="[object Object]_label_0">Small (Less than 2,000)<br></label>
+                <input type="radio" name="radio2 " value="15000">
+                <label id="[object Object]_label_1">Medium (2,000 - 15,000)<br></label>
+                <input type="radio" name="radio2 " value="15001">
+                <label id="[object Object]_label_2">Large (More than 15,000)<br></label>
+            </form>
+        </div>
+            <div id="bottomFDiv">
+                <button id="find" name="Find Schools" onclick="getall(object)">Find Schools</button>
+            </div>
+            <div id="orDiv">
+                <p id="Or">OR</p>
+            </div>
+            <div id="topGDiv">
+                <p id="Get">Get School Information</p>
+            </div>
+            <div id="bottomGDiv">
+                <p id="School">School Name:</p>
+                <form>
+                    <label id="school_label_0"> </label>
+                    <input type="text" name="school" id="inputschool">
+                </form>
+                <p id="blank"> </p>
+                <button id="fsubmit" name="Get Info" onclick="fsubmit()">Get Info</button>
+            </div>
+        
+    </body>
+</html>

@@ -1,0 +1,88 @@
+body {
+	background-color: #99ccff;
+}
+
+#topFDiv{
+        background-color: #e6b800;
+        text-align: center;
+        text-decoration: underline;
+        font-size: 300%;
+        font-weight: bold;
+        width: 80%;
+        margin: auto;
+}
+
+#leftFDiv{
+        float: left;
+        margin: auto;
+        text-align: center;
+        margin-left: 10%;
+        font-size: 125%;
+        width: 25%;
+}
+
+#midFDiv{
+        float: left;
+        margin: auto;
+        margin-left: %5;
+        font-size: 125%;
+        text-align: center;
+        width: 30%;
+}
+
+#rightFDiv{
+        float: left;
+        text-align: center;
+        margin: auto;
+        font-size: 125%;
+}
+
+#bottomFDiv{
+        clear: both;
+        text-align: center;
+}
+
+#orDiv{
+        text-align: center;
+        font-size: 250%;
+        font-weight: bold;
+        width: 80%;
+        margin: auto;
+}
+
+#topGDiv{
+        background-color: #e6b800;
+        text-align: center;
+        text-decoration: underline;
+        font-size: 300%;
+        font-weight: bold;
+        width: 80%;
+        margin: auto;
+}
+
+#bottomGDiv{
+        text-align: center;
+        font-size: 150%;
+        width: 80%;
+        margin: auto;
+}
+
+#resultsDiv{
+        background-color: #e6b800;
+        text-align: center;
+        text-decoration: underline;
+        font-size: 300%;
+        font-weight: bold;
+        width: 80%;
+        margin: auto;
+}
+
+#buttonDiv{
+	clear: both;
+	position: relative;
+	margin-top: 5%;
+	text-align: center;
+	width: 70px;
+	height: 30px;
+	margin: auto;
+}
